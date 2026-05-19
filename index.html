@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <link rel="shortcut icon" href="https://sayi.do/favicon.svg" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roberto &amp; Walkiria</title>
+  <style>
+    @font-face {
+      font-family: 'Mathanifo';
+      src: url('https://d1mviimjnzagon.cloudfront.net/fonts/mathanifo/v1/mathanifo.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      min-height: 100vh;
+      background-color: #ffebd7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    /* ── Names ── */
+    h1 {
+      font-family: 'Mathanifo', 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(3rem, 9vw, 7rem);
+      font-weight: 400;
+      color: #3d2b1f;
+      letter-spacing: 0.04em;
+      text-align: center;
+      line-height: 1.15;
+      white-space: nowrap;
+    }
+
+    /* ── Flourish divider ── */
+    .flourish-divider {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin: 1.8rem 0 2.4rem;
+      color: #b89a80;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .flourish-dot {
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #b89a80;
+      flex-shrink: 0;
+    }
+
+    .flourish-line {
+      display: block;
+      flex: 1;
+      height: 1px;
+      background: #b89a80;
+    }
+
+    .flourish-curl {
+      display: inline-block;
+      font-size: 1.5rem;
+      line-height: 1;
+      color: #b89a80;
+      font-family: Georgia, serif;
+      flex-shrink: 0;
+      position: relative;
+      top: -1px;
+    }
+
+    .flourish-curl.flip {
+      display: inline-block;
+      transform: scaleX(-1);
+    }
+
+    .flourish-heart {
+      display: inline-block;
+      font-size: 1.2rem;
+      color: #c0705a;
+      line-height: 1;
+      flex-shrink: 0;
+      margin: 0 0.2rem;
+    }
+
+    /* ── Flag buttons ── */
+    .flags {
+      display: flex;
+      gap: 3rem;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .flag-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .flag-link {
+      display: block;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 16px rgba(61,43,31,0.18);
+      flex-shrink: 0;
+    }
+
+    .flag-link:hover {
+      transform: scale(1.07);
+      box-shadow: 0 8px 28px rgba(61,43,31,0.30);
+    }
+
+    .flag-label {
+      font-family: Georgia, serif;
+      font-size: 0.85rem;
+      color: #3d2b1f;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* ── Ireland Flag ── */
+    .ie-wrap {
+      width: 120px;
+      height: 120px;
+      display: flex;
+    }
+    .ie-green  { flex: 1; background: #169B62; }
+    .ie-white  { flex: 1; background: #FFFFFF; }
+    .ie-orange { flex: 1; background: #FF883E; }
+
+    /* ── Brazil Flag ── */
+    .br-wrap {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      background: #009C3B;
+      overflow: hidden;
+    }
+    .br-diamond {
+      position: absolute;
+      inset: 0;
+      background: #FFDF00;
+      clip-path: polygon(50% 8%, 92% 50%, 50% 92%, 8% 50%);
+    }
+    .br-circle {
+      position: absolute;
+      width: 52px;
+      height: 52px;
+      background: #002776;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .br-band {
+      position: absolute;
+      width: 60px;
+      height: 8px;
+      background: white;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-10deg);
+      border-radius: 1px;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Names -->
+  <h1>Roberto &amp; Walkiria</h1>
+
+ <!-- Flourish divider — same visual width as the heading -->
+  <div class="flourish-divider">
+    <span class="flourish-curl flip">    ❧  </span>
+    <span class="flourish-line"></span>
+        <span class="flourish-curl">    ❧  </span>
+    <span class="flourish-heart">♥</span>
+    <span class="flourish-curl flip">    ❧  </span>
+    <span class="flourish-line"></span>
+    <span class="flourish-curl">    ❧  </span>
+  </div>
+ 
+
+  <!-- Flourish divider — same visual width as the heading 
+  <div class="flourish-divider">
+    <span class="flourish-dot"></span>
+    <span class="flourish-line"></span>
+    <span class="flourish-curl">&#10022;</span>
+    <span class="flourish-curl"> &#10022;</span>
+    <span class="flourish-curl">   &#10022;</span>
+    <span class="flourish-curl">    ❧  </span>
+    <span class="flourish-heart">♥</span>
+    <span class="flourish-curl flip">    ❧  </span>
+    <span class="flourish-curl">   &#10022;</span>
+    <span class="flourish-curl">  &#10022;</span>
+    <span class="flourish-curl">&#10022;</span>
+    <span class="flourish-line"></span>
+    <span class="flourish-dot"></span>
+  </div>
+ -->
+
+  <!-- Flags -->
+  <div class="flags">
+
+    <!-- Ireland -->
+    <div class="flag-item">
+      <a href="https://sayi.do/robertoandwalkiria" class="flag-link" title="English — Wedding Website">
+        <div class="ie-wrap">
+          <div class="ie-green"></div>
+          <div class="ie-white"></div>
+          <div class="ie-orange"></div>
+        </div>
+      </a>
+      <span class="flag-label">English</span>
+    </div>
+
+    <!-- Brazil -->
+    <div class="flag-item">
+      <a href="https://sayi.do/robertoewalkiria" class="flag-link" title="Português — Site do Casamento">
+        <div class="br-wrap">
+          <div class="br-diamond"></div>
+          <div class="br-circle"></div>
+          <div class="br-band"></div>
+        </div>
+      </a>
+      <span class="flag-label">Português</span>
+    </div>
+
+  </div>
+
+</body>
+</html>
